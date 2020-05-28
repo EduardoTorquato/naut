@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    color: white;
+    text-decoration: none;
+    
+}
+
+header {
+    background-color: #8100E6;
+    padding: 12px 12px 12px 20px;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tarefa {
+    width: 80vw;
+    height: auto;
+    color: white;
+    background-color: #8100E6;
+    border-radius: 20px;
+    padding: 28px;
+    margin: 40px;
+}
+
+.tarefa-enunciado {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.checkmark {
+    display:inline-block;
+    width: 52px;
+    height:52px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.checkmark-stem {
+    position: absolute;
+    width: 9px;
+    height: 54px;
+    background-color: #ccc;
+    left: 14px;
+    top: -15px;
+    border-radius: 10px;
+}
+
+.checkmark-kick {
+    position: absolute;
+    width: 28px;
+    height: 9px;
+    background-color:#ccc;
+    left: -10px;
+    top: 30px;
+    border-radius: 10px;
+}
+
+.topo-atividade {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo-atividade-nome{
+    font-size: 28px;
+}
+
