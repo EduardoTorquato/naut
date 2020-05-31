@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+header {
+    background-color: #8100E6;
+    padding: 12px 12px 12px 20px;
+}
+
+main {
+    text-align: center;
+}
+
+span {
+    font-size: 50px;
+    color: white;
+    margin: 0 15px 0 10px;
+}
+
+#enviar {
+    background-color: #8100E6;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border-style: none;
+    margin: 0 40px 0 0;
+}
+
+.input{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0 0 0;
+}
+
+.enviado {
+    color: white;
+    font-size: 38px;
+    background-color: rgba(117, 224, 127, 1);
+    width: 60%;
+    padding: 21px;
+    border-radius: 12px;
+    position: relative;
+    top: -89px;
+    right: 85px;
+    z-index: -1;
+    text-align: left;
+    display: none;
+	animation-name: stretchLeft;
+	-webkit-animation-name: stretchLeft;	
+
+	animation-duration: 1.3s;	
+	-webkit-animation-duration: 1.3s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	-webkit-transform-origin: 100% 0%; 
+}
+
+.mensagens {
+    display:  flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+
+.responda {
+    color: white;
+    font-size: 38px;
+    background-color: rgb(224, 117, 117);
+    width: 60%;
+    padding: 21px;
+    border-radius: 12px;
+    position: relative;
+    top: -89px;
+    right: 85px;
+    z-index: -1;
+    text-align: left;
+    display: none;
+	animation-name: stretchLeft;
+	-webkit-animation-name: stretchLeft;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 100% 0%;
+	-ms-transform-origin: 100% 0%;
+	-webkit-transform-origin: 100% 0%; 
+}
+
+@keyframes stretchLeft {
+	0% {
+		transform: scaleX(0.3);
+	}
+	40% {
+		transform: scaleX(1.02);
+	}
+	60% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(1);
+	}										
+}
