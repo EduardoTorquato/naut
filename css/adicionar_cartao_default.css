@@ -121,3 +121,9 @@ span {
     font-size: 60px;
     margin: auto;
 }
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
