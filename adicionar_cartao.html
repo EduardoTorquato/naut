@@ -151,11 +151,13 @@
                             mediaRecorder.stop();
                             console.log(mediaRecorder.state);
                             record.style.backgroundColor = "#8100E6";
+                            record.style.animation = "none";
                         }else{
                             recording = true;
                             mediaRecorder.start();
                             console.log(mediaRecorder.state);
                             record.style.backgroundColor = "red";
+                            record.style.animation = "flash linear 1s infinite";
                         }
                     }
                     
