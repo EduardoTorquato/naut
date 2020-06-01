@@ -35,6 +35,8 @@
                 </div>
 
                 <button type="button" id="capture"><img src="imagens/icone_foto_default.gif"></button>
+                <button type="button" id="fileUpload" onclick="fileUpload()"><img src="imagens/icone_foto_default.gif"></button>
+                <input type="file" id="upImg" name="img" accept="image/*">
                 <input type="text" name="nome_cartao">
                 <div>
                     <button type="button" id="record"><img src="imagens/icone_falar.gif"></button>
@@ -50,6 +52,16 @@
             var data = new FormData(form);
             var lodedCamera = false;
             
+            function fileUpload(){
+                document.getElementById("upImg").click();
+            }
+
+            var upImg = document.getElementById("upImg");
+            upImg.addEventListener('change', function(e){
+                var file = upImg.files[0];
+                document.getElementsById('foto_default').src = window.URL.createObjectURL(file);
+            });
+
             if (navigator.mediaDevices) {
                 console.log('getUserMedia supported.');
                 var capture = document.querySelector("#capture");
