@@ -84,7 +84,7 @@ form input[type='submit']{
     background-color: #8100E6;
 }
 
-#foto img {
+#foto_default {
     filter: grayscale(60%);
     margin: auto;
     width: 65px;
@@ -124,7 +124,10 @@ span {
 
 @keyframes flash {
 	0% { background-color: red; } 
-  	25% { background-color:  #8100E6;} 
-  	75% { background-color: red; } 
+	50% { background-color: #8100E6; } 
 	100% { background-color: red; }
+}
+
+#foto_galeria {
+    display: "none";
 }
