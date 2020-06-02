@@ -1,0 +1,88 @@
+body{
+    background-color: #f2f2f2;
+}
+#container{
+    height: 100vh;
+}
+figure{
+    margin: 0 0 0 0;
+    display: inline;
+}
+#voltar{
+    display: inline-flex;
+    height: 8vw;
+    margin: 10vw 0 0 3vw;
+}
+h1{
+    color: #000;
+    font-size: 7vw;
+    margin: -5vw 0 0 17vw;
+    display: inline-flex;
+    vertical-align: middle;
+}
+#perfil{
+    height: 55vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#texto_nome{
+    display: block;
+    position: relative;
+    background-color: #f2f2f2;
+    width: 17vw;
+    padding-left: 2vw;
+    height: 6vw;
+    margin-left: 10vw; 
+    z-index: 999;     
+}
+::-webkit-input-placeholder{
+    color: rgb(153, 153, 153);
+    padding-left: 3vw;
+}
+.texto{
+    display: block;
+    position: relative;
+    background-color: #f2f2f2;
+    width: 30vw;
+    height: 6vw;
+    margin-left: 10vw; 
+    padding-left: 2vw;
+    z-index: 999;     
+}
+#caixa1{
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    border-style: solid;
+    width: 90vw;
+    height: 10vw;
+    background-color: #f2f2f2;
+    border-color: rgb(153, 153, 153);
+    margin: -3vw auto 25vw auto;   
+}
+.caixa{
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    border-style: solid;
+    width: 90vw;
+    height: 10vw;
+    background-color: #f2f2f2;
+    border-color: rgb(153, 153, 153);
+    margin: -3vw auto 5vw auto;
+}
+#botao{
+    display: block;
+    width: 55vw;
+    height: 12vw;
+    background-color: rgba(24, 117, 239, 1);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 25vw auto auto auto;
+    font-size: 5vw;
+}
+input:focus{
+    border-color: blue;
+}
