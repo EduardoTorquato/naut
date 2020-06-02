@@ -60,6 +60,8 @@
             function fileUp(){
                 if (!recordingVideo){
                     document.getElementById("upImg").click();
+                    document.querySelector('#snapshot').style.display = "none";
+                    document.getElementById("foto_galeria").style.display = "block";
                 }else{
                     alert("Feche a câmera");
                 }
