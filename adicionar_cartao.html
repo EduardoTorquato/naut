@@ -205,10 +205,13 @@
                 }) 
 
                 }
-                
+
                 if (!recording) {
                 function fileUp(){
                     document.getElementById("upImg").click();
+                    var img = document.getElementById("foto_galeria");
+                    img.style.display = 'block';
+                    document.querySelector('#snapshot').style.display = "none";
                 }
                 var upImg = document.getElementById("upImg");
                 upImg.addEventListener('change', function(e){
@@ -223,7 +226,7 @@
                     document.querySelector("#playerVideo").style.display = "none";
                 
                 });
-            }
+                }
         </script>
     </body>
 </html>    
