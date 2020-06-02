@@ -129,5 +129,6 @@ span {
 }
 
 #foto_galeria {
-    display: "none";
+    display: none;
+    border-radius: 12px;
 }
