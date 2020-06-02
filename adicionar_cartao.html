@@ -80,6 +80,7 @@
                 capture.addEventListener('click', function(e){
                     if (lodedCamera) {
                         lodedCamera = false;
+                        document.querySelector("#foto_galeria").style.display = "none";
                         //Captura elemento de vídeo
                         var video = document.querySelector("#playerVideo");
                     
