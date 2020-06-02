@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>NAUT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/frase_default.css">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="application-name" content=StackOverflow>
+
+        <!--favicon, arquivo de imagem podendo ser 8x8 - 16x16 - 32x32px com extensão .ico-->
+        <link rel="shortcut icon" href="" type="image;x-icon">
+
+        
+        <!-- Telas Responsivas-->
+        <link rel=stylesheet media="screen and (max-width:480px)" href="css/frase_style480.css">
+        <link rel=stylesheet media="screen and (min-width:481px) and (max-width:768px)" href="css/frase_style768.css"> 
+         
+        <!-- Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <a href="categorias.html"><img src='imagens/icone_voltar.png' alt=''></a>
+        </header>
+        <main>
+            <div class="criar">
+                <a href="criar_frase.html"><span><div class="crossVertical"></div><div class="crossHorizontal"></div></span><p>Criar</p></a>
+            </div>
+            <div class="frase">
+                <div class=cartoes><img src="imagens/abacaxi.svg"><span><div></div><div class="crossHorizontal"></div></span><img src="imagens/morango.svg"><span><div></div><div class="crossHorizontal"></div></span><img src="imagens/cartao_feliz.svg"></div>
+                <div class="opcoes">
+                    <button class=opcao onclick=""><img src="imagens/icone_edit.gif"></button>
+                    <button class=opcao onclick="playAudio(5)"><img src="imagens/icone_play.gif"></button>
+                </div>
+                
+            </div>
+            
+        </main>
+        
+        <script>
+            
+            function playAudio(cod) {
+                var path = "audio/"
+                var audio = new Audio(path + cod + ".wav");
+                audio.play();
+            }
+
+        </script>
+    </body>
+</html>
