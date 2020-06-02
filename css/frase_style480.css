@@ -1,0 +1,20 @@
+.opcoes {
+    flex-flow: nowrap;
+    margin: auto;
+}
+
+.opcao {
+    margin: 20px;
+}
+
+.cartoes {
+    margin: 20px auto auto auto;
+}
+
+.cartoes span div {
+    width: 5px;
+    height: 20px;
+}
+.cartoes span {
+    margin: 20px 12px 0 12px;
+}
