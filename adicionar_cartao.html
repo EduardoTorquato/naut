@@ -52,7 +52,7 @@
             
         </main>
         <script>
-            var recording;
+            var recordingVideo;
             var form = document.getElementById("form");
             var data = new FormData(form);
             var lodedCamera = false;
@@ -62,7 +62,7 @@
                 var capture = document.querySelector("#capture");
                 capture.addEventListener('click', function(e){
                     if (lodedCamera) {
-                        recording = false;
+                        recordingVideo = false;
                         lodedCamera = false;
                         document.querySelector("#foto_galeria").style.display = "none";
                         //Captura elemento de vídeo
@@ -95,8 +95,30 @@
                         video.srcObject = null;
                         video.style.display = "none";
                         capture.style.backgroundColor = "#8100E6";
+
+                        if (!recordingVideo) {
+                            function fileUp(){
+                                document.getElementById("upImg").click();
+                                var img = document.getElementById("foto_galeria");
+                                img.style.display = 'block';
+                                document.querySelector('#snapshot').style.display = "none";
+                            }
+                            var upImg = document.getElementById("upImg");
+                            upImg.addEventListener('change', function(e){
+                                document.getElementById("foto_default").style.display = "none";
+                                var file = upImg.files[0];
+                                var img = document.getElementById("foto_galeria");
+                                img.style.display = 'block';
+                                img.height = 250;
+                                img.width = 250;
+                                img.src = window.URL.createObjectURL(file);
+                                document.querySelector('#snapshot').style.display = "none";
+                                document.querySelector("#playerVideo").style.display = "none";
+                            
+                            });
+                            }
                     }else{
-                        recording = true;
+                        recordingVideo = true;
                         lodedCamera = true;
                         var canvas = document.querySelector('#snapshot');
                         document.querySelector("#foto_default").style.display = "none";
@@ -206,27 +228,7 @@
 
                 }
 
-                if (!recording) {
-                function fileUp(){
-                    document.getElementById("upImg").click();
-                    var img = document.getElementById("foto_galeria");
-                    img.style.display = 'block';
-                    document.querySelector('#snapshot').style.display = "none";
-                }
-                var upImg = document.getElementById("upImg");
-                upImg.addEventListener('change', function(e){
-                    document.getElementById("foto_default").style.display = "none";
-                    var file = upImg.files[0];
-                    var img = document.getElementById("foto_galeria");
-                    img.style.display = 'block';
-                    img.height = 250;
-                    img.width = 250;
-                    img.src = window.URL.createObjectURL(file);
-                    document.querySelector('#snapshot').style.display = "none";
-                    document.querySelector("#playerVideo").style.display = "none";
                 
-                });
-                }
 
                 console.log(recording);
         </script>
