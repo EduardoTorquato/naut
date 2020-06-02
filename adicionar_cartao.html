@@ -113,8 +113,8 @@
                     }else{
                         lodedCamera = true;
                         var canvas = document.querySelector('#snapshot');
-                        var imgDefault = document.querySelector("#foto_default");
-                        imgDefault.style.display = "none";
+                        document.querySelector("#foto_default").style.display = "none";
+                        document.querySelector("#foto_galeria").style.display = "none";
                         canvas.style.display = "none";
                         capture.style.backgroundColor = "#36C546";
                         //Captura elemento de vídeo
