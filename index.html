@@ -4,56 +4,59 @@
         <meta charset=UTF-8>
         <meta name=viewport content="width=device-width, initial-scale=1.0">
         <meta name=author content=Uranus>
-        <link rel="shortcut icon" href="imagens_perfil/logo_naut_boia.svg">
-        <link rel="shortcut icon" href="imagens/logo_naut_boia.svg" />
-        <link rel=stylesheet href=css/default_index.css>
-        <link rel=stylesheet href=css/320_index.css>
-        <link rel=stylesheet href=css/480_index.css>
-        <link rel=stylesheet href=css/600_index.css>
-        <link rel=stylesheet href=css/769_index.css>
-        <link rel=stylesheet href=css/960_index.css>
-        <link rel=stylesheet href=css/1280_index.css>
-        <link rel=stylesheet href=css/1920_index.css>
+        <link rel="shortcut icon" href="imagens_index/logo_naut_boia.svg">
+        <link rel=stylesheet href=css_index/default_index.css>
+        <link rel=stylesheet href=css_index/320_index.css>
+        <link rel=stylesheet href=css_index/480_index.css>
+        <link rel=stylesheet href=css_index/600_index.css>
+        <link rel=stylesheet href=css_index/769_index.css>
+        <link rel=stylesheet href=css_index/960_index.css>
+        <link rel=stylesheet href=css_index/1280_index.css>
+        <link rel=stylesheet href=css_index/1920_index.css>
         <title>Naut</title>
     </head>
     <body>
         <div id=container>
             <header>
                 <div id=cabecalho>
-                    <img id=logo src='imagens/logo_hr.svg' alt='Logo NAUT horizontal'>
+                    <img id=logo src='imagens_index/logo_hr.svg' alt='Logo NAUT horizontal'>
                     <input type="checkbox" id="menuAvPaa">
                     <label id="burger" for="menuAvPaa">
-                        <div></div>
                         <div></div>
                         <div></div>
                     </label>
                   <nav id="menu">
                         <ul>
-                            <figure>
-                                <img id=icone_perfil src='imagens/icone_perfil.gif' alt='Foto de perfil padrão'>
-                            </figure>
-                            <button id=login>Entrar/Registrar</button>
-                            <hr>
-                            <li id=inicio><a>Início</a></li>
+                            <li><a>Home</a></li>
                             <li><a>O que é o NAUT</a></li>
                             <li><a>Recursos</a></li>
                             <li><a>Planos</a></li>
-                            <hr>
-                            <li><a>Contate-nos<img src='imagens/seta_forward.svg'></a></li>
-                      </ul>
+                        </ul>
+                        <form action="#" method="POST">
+                            <div>
+                                <label for="E-mail"></label>
+                            </div>
+                                <input type="email" placeholder='E-mail' id=caixa1 />
+                            <div>
+                                <label for="Senha"></label>
+                            </div>
+                                <input type="password" placeholder='Senha' id=caixa />
+                            <button id=botao_amarelo>Entrar</button>
+                        </form>
+                      <h3>Não possuí uma conta? <a> Registrar</a></h3>
                   </nav>
                 </div>   
             </header>
             <main>
                 <h1>Transformando sonhos em palavras</h1>
-                <img id=celular src="imagens/home_principal.svg">
+                <img id=celular src="imagens_index/home_principal.svg">
                 <button id=botao_comece>Comece Já</button>
             </main>
             <article>
                 <section>
                     <h2 clas=titulo_azul>O que é o NAUT?</h2>
                     <figure>
-                        <img class=icone src="imagens/icone_menino_com_fundo.svg" alt='Icone menino com o tablet.'>
+                        <img class=icone src="imagens_index/icone_menino_com_fundo.svg" alt='Icone menino com o tablet.'>
                     </figure>
                     <p class=texto_azul> O Naut é uma aplicação em 
                         nuvem com objetivo de auxiliar pessoas que se enquadram no 
@@ -74,7 +77,7 @@
                 <section>
                     <h2 class=titulo_branco>Como funciona o NAUT?</h2>
                     <figure>
-                        <img class=icone src='imagens/icone_cartoes.svg' alt='Icone de cartões do NAUT'>
+                        <img class=icone src='imagens_index/icone_cartoes.svg' alt='Icone de cartões do NAUT'>
                         <figcaption class=caption_branco>Cartões</figcaption>
                     </figure>
                     <p class=texto_branco>O Naut conta com o sistema de 
@@ -87,7 +90,7 @@
                 </section>
                 <section id=galeria>
                     <figure>
-                        <img id=icone_galeria src='imagens/icone_galeria.svg' alt='Icone da Galeria do NAUT'>
+                        <img id=icone_galeria src='imagens_index/icone_galeria.svg' alt='Icone da Galeria do NAUT'>
                         <figcaption class=caption_azul>Galeria</figcaption>
                     </figure>
                     <p id=texto_galeria>
@@ -101,7 +104,7 @@
                 </section>
                 <section>
                     <figure>
-                        <img class=icone src='imagens/icone_diario.png' alt='Icone do diário do NAUT'>
+                        <img class=icone src='imagens_index/icone_diario.png' alt='Icone do diário do NAUT'>
                         <figcaption class=caption_branco>Diário</figcaption>
                     </figure>
                     <p class=texto_branco> Com o diario é possível 
@@ -119,7 +122,7 @@
             <article>
                 <section>
                     <h2>O NAUT também oferece</h2>
-                    <img class=icone src='imagens/icone_personalizacao.svg' alt='Icone de personalização do NAUT.'>
+                    <img class=icone src='imagens_index/icone_personalizacao.svg' alt='Icone de personalização do NAUT.'>
                     <figcaption class=caption_azul>Personalização</figcaption>
                     <p class=texto_azul>O diferencial do Naut é a 
                         personalização,  a criação dos 
@@ -132,7 +135,7 @@
                 </section>
                 <section>
                     <h2>Instituição</h2>
-                    <img class=icone src='imagens/icone_instituicao.svg'>
+                    <img class=icone src='imagens_index/icone_instituicao.svg'>
                     <figcaption class=caption_azul>Instituição</figcaption>
                     <p class=texto_azul>O naut também oferece 
                         licensas institucionais para 
@@ -148,43 +151,43 @@
             <article>
                 <div class=slide>
                    <div class=planos>
-                       <img class=icone_planos src='imagens/icone_basico.svg'>
+                       <img class=icone_planos src='imagens_index/icone_basico.svg'>
                        <figcaption class=caption_azul>Básico</figcaption>
                        <h3 class=recurso>Recursos disponíveis:</h3>
                        <ul>
-                           <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Cartões</p></li>
-                           <li><img class=verificado src='imagens/verificado_cinza.svg'><p class=recurso>Galeria</p></li>
-                           <li><img class=verificado src='imagens/verificado_cinza.svg'><p class=recurso>Formador de sintaxe</p></li>
-                           <li><img class=verificado src='imagens/verificado_cinza.svg'><p class=recurso>Controle Parental</p></li>
+                           <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Cartões</p></li>
+                           <li><img class=verificado src='imagens_index/verificado_cinza.svg'><p class=recurso>Galeria</p></li>
+                           <li><img class=verificado src='imagens_index/verificado_cinza.svg'><p class=recurso>Formador de sintaxe</p></li>
+                           <li><img class=verificado src='imagens_index/verificado_cinza.svg'><p class=recurso>Controle Parental</p></li>
                        </ul>
                        <p class=recurso>Período de teste: Ilimitado</p>
                        <p class=recurso>Valor: Gratuito</p>
                        <button class=escolher>Escolher</button>
                    </div>
                    <div class=planos>
-                    <img class=icone_planos src='imagens/icone_premium.svg'>
+                    <img class=icone_planos src='imagens_index/icone_premium.svg'>
                     <figcaption class=caption_azul>Premium</figcaption>
                     <h3 class=recurso>Recursos disponíveis:</h3>
                     <ul>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Cartões</p></li>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Galeria</p></li>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Formador de sintaxe</p></li>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Controle Parental</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Cartões</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Galeria</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Formador de sintaxe</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Controle Parental</p></li>
                     </ul>
                     <p class=recurso>Período de teste: 06 meses</p>
                     <p class=recurso>Valor: XX/mês</p>
                     <button class=escolher>Escolher</button>
                 </div>
                 <div class=planos>
-                    <img class=icone_planos src='imagens/icone_institucional.svg'>
+                    <img class=icone_planos src='imagens_index/icone_institucional.svg'>
                     <figcaption class=caption_azul>Institucional</figcaption>
                     <h3 class=recurso>Recursos disponíveis:</h3>
                     <ul>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Cartões</p></li>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Galeria</p></li>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Formador de sintaxe</p></li>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Controle Parental</p></li>
-                        <li><img class=verificado src='imagens/verificado_azul.svg'><p class=recurso>Sistema de tarefas</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Cartões</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Galeria</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Formador de sintaxe</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Controle Parental</p></li>
+                        <li><img class=verificado src='imagens_index/verificado_azul.svg'><p class=recurso>Sistema de tarefas</p></li>
                     </ul>
                     <p class=recurso>Período de teste: 06 meses</p>
                     <p class=recurso>Valor: XX/mês</p>
