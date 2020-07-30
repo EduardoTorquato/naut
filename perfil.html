@@ -17,94 +17,59 @@
 </head>
 <body>
     <div id=container>
-        <header>
-            <div id=cabecalho>
-                <img id=logo src='imagens_perfil/logo_hr.svg' alt='Logo NAUT horizontal'>
-                <input type="checkbox" id="menuAvPaa">
-                <label id="burger" for="menuAvPaa">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </label>
-              <nav id="menu">
-                    <ul>
-                        <figure>
-                            <img id=perfil src='imagens_perfil/icone_perfil.gif' alt='Foto de perfil padrão'>
-                        </figure>
-                        <button id=login>Entrar/Registrar</button>
-                        <hr>
-                        <li id=inicio><a>Início</a></li>
-                        <li><a>O que é o NAUT</a></li>
-                        <li><a>Recursos</a></li>
-                        <li><a>Planos</a></li>
-                        <hr>
-                        <li><a>Contate-nos<img src='imagens_perfil/seta_forward.svg'></a></li>
-                  </ul>
-              </nav>
-            </div>   
-        </header>
-        <main> 
-            <article id=dados>
-                <section id=meu_perfil>
-                    <h3 class=texto_branco>Meu perfil</h3>
-                    <figure id=figure_perfil>
-                        <img id=icone_perfil src='imagens_perfil/icone_perfil.gif' alt='Foto de perfil padrão'>
+        <div id=branco>
+            <figure>
+                <img id=logo src='imagens_perfil/logo-nome-naut.gif'>
+            </figure>
+        </div>
+        <main>
+            <figure>
+                <img id=voltar src='imagens_perfil/icone-seta-branco.svg' alt=Seta para voltar>
+            </figure>
+            <h1> Meu perfil</h1>
+            <figure>
+                <img id=perfil src='imagens_perfil/icone-meu-perfil.svg' alt='Foto de perfil do usuário.'>
+            </figure>
+            <h2>Pedro da Silva</h2>
+            <div class=acoes>
+                <a class=link_acoes href="perfis_ativos.html">
+                    <figure>
+                        <img class=icone_acoes src='imagens_perfil/icone-perfis-ativos.svg' alt='Ícone de perfis ativos do NAUT'>
+                        <figcaption>Perfis ativos</figcaption>
                     </figure>
-                    <h1>Amanda Luiza Martins</h1>
-                    <hr>
-                    <h2>amanda.martins.luiza@gmail.com</h2>
-                    <figure class=figure_icone>
-                        <a><img class=icone src='imagens_perfil/icone_editar.svg' alt='Foto de perfil padrão'></a>
-                        <figcaption class=caption_branco>Editar dados</figcaption>
+                </a>
+            </div>
+            <div class=acoes>
+                <a class=link_acoes href="meus_dados.html">
+                    <figure>
+                        <img class=icone_acoes src='imagens_perfil/icone-meus-dados.svg' alt='Ícone financeiro do NAUT'>
+                        <figcaption>Meus Dados</figcaption>
                     </figure>
-                    <figure class=figure_icone>
-                        <a><img class=icone src='imagens_perfil/icone_mensalidade.svg' alt='Foto de perfil padrão'></a>
-                        <figcaption class=caption_branco>Mensalidades</figcaption>
+                </a>
+            </div>
+            <div id=botao1>
+                <a class=link_botao href="#">
+                    <figure>
+                        <img class=icone_botao src='imagens_perfil/icone-excluirConta.svg' alt='Ícone excluir conta do NAUT'>
+                        <figcaption class=caption>Excluir Conta</figcaption>
                     </figure>
-                    <figure class=figure_icone>
-                        <a><img class=icone src='imagens_perfil/icone_perfis_ativos.svg' alt='Foto de perfil padrão'></a>
-                        <figcaption class=caption_branco>Perfis ativos</figcaption>
+                    <figure id=figure_seta1>
+                        <img class=seta_preta src='imagens_perfil/icone-seta-preta.svg'>
                     </figure>
-                </section>
-                <section id=meu_plano>
-                    <h3 class=texto_preto>Meu plano:</h3>
-                        <h4>Premium</h4>
-                        <figure class=figure_icone>
-                            <img class=icone_plano src='imagens_perfil/icone_premium.svg'>
-                        </figure>
-                        <button id=botao_plano><a>Aterar o Plano</a></button>
-                    <h3 class=texto_preto>Forma de pagamento:</h3>
-                        <h4>Boleto Bancário</h4>
-                        <img id=icone_pagamento src='imagens_perfil/icone_cartao.svg'>
-                        <button id=botao_pagamento>Alterar forma de pagamento</button>
-                </section>
-                <section id=contato>
-                    <h4 class=texto_img>Contate-nos</h4>
-                    <figure class=figure_icone_contato>
-                        <img class=icone_seta src='imagens_perfil/seta_forward.svg'>
+                </a>
+            </div>
+            <div id=botao2>
+                <a class=link_botao href="#">
+                    <figure>
+                        <img class=icone_botao src='imagens_perfil/icone-sair.svg' alt='Ícone sair da conta do NAUT'>
+                        <figcaption class=caption>Sair</figcaption>
                     </figure>
-                </section>
-                <section id=excluir>
-                    <figure class=figure_icone_contato>
-                        <img id=icone_excluir src='imagens_perfil/icone_lixeira.svg'>
+                    <figure id=figure_seta2>
+                        <img class=seta_preta src='imagens_perfil/icone-seta-preta.svg'>
                     </figure>
-                    <h4 class=texto_img2>Excluir conta</h4>
-                    <h4 class=texto_img3>Sair</h4>
-                    <figure class=figure_icone_contato>
-                        <img id=icone_sair src='imagens_perfil/icone_sair.svg'>
-                    </figure>
-                </section>
-            </article>
-        </main>
-        <footer id=rodape>
-            <hr id=linha_rodape>
-            <a class=rodape_link href='index.html'>Início</a><br>
-            <a class=rodape_link href='#'>O que é o NAUT</a><br>
-            <a class=rodape_link href='#'>Recursos</a><br>
-            <a class=rodape_link href='#'>Termos de Uso</a><br>
-            <a class=rodape_link href='#'>Política de Privacidade</a><br>
-            <p id=copyright>&copy NAUT application, all rights reserved</p>
-        </footer>
+                </a>
+            </div>
+        </main> 
     </div>    
 </body>
 </html>
