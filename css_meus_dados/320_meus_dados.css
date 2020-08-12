@@ -1,0 +1,393 @@
+#container{
+    background-color: rgba(24, 117, 239, 1);
+    width: 100vw;
+    height: 100%;
+}
+figure{
+    margin: 0 0 0 0;
+    display: inline-flex;
+}
+#fundo_logo{
+    width: 100vw;
+    height: 20vw;
+    background-color: #FFF;
+}
+#logo{
+    height: 12vw;
+    margin: 4vw 0 0 28vw;
+}
+#seta_branca{
+    height: 7vw;
+    margin: 5vw 0 0 5vw;
+    display: inline-flex;
+}
+h1{
+    color: #FFF;
+    font-size: 6vw;
+    display: inline-flex;
+    margin: 0 0 0 22vw;
+}
+h3{
+    font-size: 5vw;
+    color: #FFF;
+    margin: 13vw 0 0 5vw;
+}
+#cinza{
+    background-color: rgba(238, 238, 238, 1);
+    margin: 15vw 0 0 0;
+    width: 100%;
+    height: 280vw;
+    position: relative;
+}
+#usuario{
+    position: absolute;
+    margin: -11vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: none;
+}
+#pessoa{
+    height: 11vw;
+    margin: 4vw 0 0 4vw;
+}
+#titulo_usuario{
+    display: block;
+    font-size: 4vw;
+    margin: -12vw 0 0 20vw;
+    font-weight: normal;
+}
+#nome_usuario{
+    display: block;
+    font-size: 4vw;
+    margin: 1vw 0 0 20vw;
+    font-weight: normal;
+}
+#alterar_email{
+    position: relative;
+    margin: 8vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    box-shadow: none;
+}
+#icone_email{
+    height: 12vw;
+    margin: 1vw 2vw 0 -40vw;
+}
+#email{
+    display: inline;
+    position: absolute;
+    font-size: 4vw;
+    margin: 2vw 0 0 -24vw;
+    font-weight: normal;
+}
+#email_usuario{
+    display: inline-block;
+    font-size: 4vw;
+    margin: 7vw 0 0 -24vw;
+    font-weight: normal;
+    position: absolute;
+}
+#seta1{
+    height: 4vw;
+    margin: -8vw 0 0 36vw;
+    display: flex;
+    position: absolute;
+}
+.titulo_preto{
+    color: #000;
+    font-size: 5vw;
+    margin: 12vw 0 0 5vw;
+}
+#alterar_nome{
+    position: relative;
+    margin: 5vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: none;
+}
+#pessoa_nome{
+    height: 11vw;
+    margin: -7vw 0 0 -38vw;
+    position: absolute;
+}
+#titulo_nome{
+    display: block;
+    position: absolute;
+    font-size: 4vw;
+    margin: -7vw 0 0 18vw;
+    font-weight: normal;
+}
+#nome_pessoal{
+    display: block;
+    font-size: 4vw;
+    margin: -2vw 0 0 18vw;
+    font-weight: normal;
+    position: absolute;
+}
+#seta2{
+    height: 4vw;
+    margin: -3vw 0 0 36vw;
+    display: flex;
+    position: absolute;
+}
+#documento{
+    position: relative;
+    margin: -1vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    box-shadow: none;
+}
+#icone_documento{
+    height: 12vw;
+    margin: 0vw 0 0 5vw;
+    position: absolute;
+}
+#titulo_documento{
+    display: block;
+    position: absolute;
+    font-size: 4vw;
+    margin: 0vw 0 0 19vw;
+    font-weight: normal;
+}
+#documento_usuario{
+    display: block;
+    font-size: 4vw;
+    margin: 5vw 0 0 19vw;
+    font-weight: normal;
+    position: absolute;
+}
+#alterar_telefone{
+    position: relative;
+    margin: -1vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    box-shadow: none;
+}
+#telefone{
+    height: 12vw;
+    margin: -7vw 0 0 -39vw;
+    position: absolute;
+}
+#titulo_telefone{
+    display: block;
+    position: absolute;
+    font-size: 4vw;
+    margin: -7vw 0 0 18vw;
+    font-weight: normal;
+}
+#telefone_usuario{
+    display: block;
+    font-size: 4vw;
+    margin: -2vw 0 0 18vw;
+    font-weight: normal;
+    position: absolute;
+}
+#seta3{
+    height: 4vw;
+    margin: -3vw 0 0 36vw;
+    display: flex;
+    position: absolute;
+}
+#alterar_endereco{
+    position: relative;
+    margin: 5vw 0 0 5vw;
+    width: 90vw;
+    height: 22vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    box-shadow: none;
+}
+#icone_endereco{
+    height: 12vw;
+    margin: -7vw 0 0 -39vw;
+    position: absolute;
+}
+#rua{
+    display: block;
+    position: absolute;
+    font-size: 4vw;
+    margin: -10vw 0 0 18vw;
+    font-weight: normal;
+}
+#complementos{
+    display: block;
+    font-size: 4vw;
+    margin: -5vw 0 0 18vw;
+    font-weight: normal;
+    position: absolute;
+}
+#cep{
+    display: block;
+    font-size: 4vw;
+    margin: -0vw 0 0 18vw;
+    font-weight: normal;
+    position: absolute;
+}
+#seta4{
+    height: 4vw;
+    margin: -3vw 0 0 36vw;
+    display: flex;
+    position: absolute;
+}
+#alterar_cartao{
+    position: relative;
+    margin: 5vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    box-shadow: none;
+}
+#cartao{
+    height: 12vw;
+    margin: -7vw 0 0 -39vw;
+    position: absolute;
+}
+#titulo_cartao{
+    display: block;
+    position: absolute;
+    font-size: 4vw;
+    margin: -7vw 0 0 18vw;
+    font-weight: normal;
+}
+#numero_cartao{
+    display: block;
+    font-size: 4vw;
+    margin: -2vw 0 0 18vw;
+    font-weight: normal;
+    position: absolute;
+}
+#seta5{
+    height: 4vw;
+    margin: -3vw 0 0 36vw;
+    display: flex;
+    position: absolute;
+}
+#alterar_plano{
+    position: relative;
+    margin: 5vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: none;
+}
+#plano{
+    height: 12vw;
+    margin: -7vw 0 0 -39vw;
+    position: absolute;
+}
+#titulo_plano{
+    display: block;
+    position: absolute;
+    font-size: 4vw;
+    margin: -7vw 0 0 18vw;
+    font-weight: normal;
+}
+#preco{
+    display: block;
+    font-size: 4vw;
+    margin: -2vw 0 0 18vw;
+    font-weight: normal;
+    position: absolute;
+}
+#seta6{
+    height: 4vw;
+    margin: -3vw 0 0 36vw;
+    display: flex;
+    position: absolute;
+}
+#data{
+    position: relative;
+    margin: -1vw 0 0 5vw;
+    width: 90vw;
+    height: 20vw;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(208, 208, 208, 1);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    box-shadow: none;
+}
+#calendario{
+    height: 12vw;
+    margin: 0 0 0 5vw;
+    position: absolute;
+}
+#titulo_data{
+    display: block;
+    position: absolute;
+    font-size: 4vw;
+    margin: 0vw 0 0 19vw;
+    font-weight: normal;
+}
+#prox_data{
+    display: block;
+    font-size: 4vw;
+    margin: 4vw 0 0 19vw;
+    font-weight: normal;
+    position: absolute;
+}
