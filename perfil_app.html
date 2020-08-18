@@ -34,7 +34,7 @@
                     </figcaption>
                 </figure>
                 <p>Último acesso: 2h atrás</p>
-                <button id=botao-azul>
+                <button id=botao-azul onclick="slide()">
                     Gerar código QR
                 </button>
                 <button id=botao_excluir>
@@ -46,7 +46,19 @@
                     <img id=balao src='imagens_perfil_app/balao.png'>
                 </figure>
                 <p id=texto>Em outro dispositivo, clique no ícone de escanear QR code na pagina inical e escaneie o código gerado.</p>
+                <div id="qr">
+                    <div id=branco-qr>
+                        <figure>
+                            <img id=qr-code src="imagens_perfil_app/qr-code.gif">
+                        </figure>
+                    </div>
+                </div>
             </div>
+            <script>
+                function slide() {
+                    document.getElementById("qr").style.opacity = "1";
+                }
+            </script>
         </div>
     </body>
 </html>
