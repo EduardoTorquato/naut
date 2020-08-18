@@ -1,0 +1,155 @@
+#logo{
+    height: 10vw;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-top: 5vw;
+  }
+  #container{
+      font-size: 16px;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
+  #cabecalho {
+      display: block;
+      position: relative;
+      background-color: rgba(253, 253, 253, 1);
+      background-repeat: no-repeat;
+      height: 20vw;
+      z-index: 998;
+      margin-top: -1px;
+      margin-left: -1px;
+  }
+  .burger-wrapper {
+    cursor: pointer;
+    }
+    #menu {
+      background:rgba(39, 39, 255, 1);
+      width: 100vw;
+      height: 101vh;
+      position: absolute;
+      right: 0;
+      transition-timing-function: cubic-bezier(10,2,3,1);
+      transform: translateX(-100rem);
+      top: 0;
+      z-index: 0;
+      transition: 0.5s;
+    }
+    #menu ul{
+      list-style-type: none;
+      margin-top: 30vw;
+      text-align: left;
+      font-size: 8vw;
+      font-weight: 700;
+    }
+    #menu li {
+      margin-top: 5vw;
+      color: #fff;
+    }
+    #menu li:nth-child(5){
+        color:rgb(255, 199, 0);
+        margin-bottom: 20vw;
+    }
+    ::-webkit-input-placeholder{
+        color: rgb(153, 153, 153);
+        padding-left: 3vw;
+      }
+      #foto_perfil{
+        width: 25.625vw;
+        display: block;
+        margin: 0 auto 0 auto;
+      }
+      #nome_perfil{
+        font-size: 6.25vw;
+        color: #FFF;
+        text-align: center;
+      }
+      
+      #botao_amarelo{
+        background-color:rgba(255, 199, 0, 1);
+        display: block;
+        margin: 0 auto 0 auto;
+        color: #000;
+        border-radius: 1.25vw;
+        border-width: 0.625vw;
+        border-style: solid;
+        border-color: rgb(255, 199, 0);
+        width: 84.375vw;
+        height: 15vw;
+        font-size: 18px;
+      }
+      #menuAvPaa {
+        display: none;
+      }
+      
+      #menuAvPaa:checked ~ #menu {
+        transform: translateX(0rem);
+      }
+      
+      #burger {
+        position: absolute;
+        cursor: pointer;
+        width: 2rem;
+        height: 6vw;
+        right: 1rem;
+        top: 6vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      
+      #burger > div:nth-child(1) {
+        height: 5px;
+        width: 26px;
+        padding: 0px;
+        border-radius: 5px;
+        background-color: rgb(3,51,109);
+        transition: 0.5s;
+        z-index: 999;
+        margin-left: 2vw;
+      }
+      
+      #burger > div:nth-child(2) {
+        height: 5px;
+        width: 21px;
+        padding: 0px;
+        border-radius: 5px;
+        background-color:rgb(3,51,109);
+        transition: 0.5s;
+        z-index: 999;
+        margin-left: 3vw;
+      }
+      
+      #burger > div:nth-child(3) {
+        height: 5px;
+        width: 26px;
+        padding: 0px;
+        border-radius: 5px;
+        background-color: rgb(3,51,109);
+        transition: 0.5s;
+        z-index: 999;
+        margin-left: 2vw;
+      }
+      
+      #menuAvPaa:checked ~ #burger > div {
+      background-color: #fff;
+      }
+      
+      #menuAvPaa:checked ~ #burger > div:nth-child(1) {
+        transform: translateY(3vw) rotate(45deg);
+        height: 5px;
+        width: 30px;
+        margin-bottom: 0px;
+        margin-left: 2vw;
+      }
+      #menuAvPaa:checked ~ #burger > div:nth-child(2) {
+      opacity: 0;
+      }
+      #menuAvPaa:checked ~ #burger > div:nth-child(3) {
+        transform: translateY(-2vw) rotate(-45deg);
+        height: 5px;
+        width: 30px;
+        margin-bottom: 0px;
+        margin-left: 2vw;
+      }      
