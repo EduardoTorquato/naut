@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset=UTF-8>
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <meta name=author content=Uranus>
+        <link rel="shortcut icon" href="imagens_scan/logo_naut_boia.svg">
+        <link rel=stylesheet href=css_scan/default_scan.css>
+        <link rel=stylesheet href=css_scan/320_scan.css>
+        <link rel=stylesheet href=css_scan/480_scan.css>
+        <link rel=stylesheet href=css_scan/600_scan.css>
+        <link rel=stylesheet href=css_scan/769_scan.css>
+        <link rel=stylesheet href=css_scan/960_scan.css>
+        <link rel=stylesheet href=css_scan/1280_scan.css>
+        <link rel=stylesheet href=css_scan/1920_scan.css>
+        <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>
+        <title>QR Code</title>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <a href="index.html"><img id=seta-branca src='imagens_scan/icone-seta-branca.svg'></a>
+            </figure>
+                <h1>Escanear código QR</h1>
+            </header>
+            <div id=texto>
+                <p>Para escanear, acesse seus perfis ativos e gere o código.</p>
+                <p>Centralize o código para entrar.</p>
+            </div>
+            <video id="preview"></video>
+            <script>
+                let scanner = new Instascan.Scanner(
+                    {
+                        video: document.getElementById('preview'), mirror: false
+                    }
+                );
+                scanner.addListener('scan', function(content) {
+                    alert('Escaneou o conteudo: ' + content);
+                    var codigo = content;
+                    console.log(codigo);   
+                });
+                Instascan.Camera.getCameras().then(cameras => 
+                {
+                    if(cameras.length > 0){
+                        scanner.start(cameras[1]);
+                    } else {
+                        console.error("Não existe câmera no dispositivo!");
+                    }
+                });
+        </script>
+    </body>
+</html>
