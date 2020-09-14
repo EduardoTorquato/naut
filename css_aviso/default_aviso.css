@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+#container{
+    background-color: rgba(251, 249, 249, 1);
+    height: 100vh;
+}
+figure{
+    margin: 0 0 0 0;
+}
+#logo{
+    width: 11.718vw;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
+#conteudo{
+    width: 37.5vw;
+    height: 32.42vw;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(221, 218, 218, 1);
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+#desktop{
+    width: 5.625vw;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+h1{
+    font-size: 1.718vw;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    display: block;
+    margin: 0 auto 0 auto;
+    font-size: 1.25vw;
+    width: 27.34vw;
+    padding-bottom: 2vw;
+}
+button{
+    width: 12.10vw;
+    background-color: rgba(24, 117, 239, 1);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    height: 2.96vw;
+    display: block;
+    margin: 4vw auto 0 auto;
+    font-size: 1.09vw;
+}
