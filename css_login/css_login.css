@@ -1,0 +1,273 @@
+body{
+    background-color: #fff;
+    height: 80vh;
+    width: 98vw;
+}
+#amarelo{
+    background-color: rgba(255, 236, 68, 1);
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+}
+#container{
+    padding: 0;
+}
+a > div:nth-child(1) {
+    padding: 0px;
+    margin-top: -10%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    z-index: 999;
+    transform: translateY(0.3vw) rotate(45deg);
+    height: 5px;
+    width: 2.14vw;
+    margin-left: 5vw;
+}
+a > div:nth-child(2) {
+    padding: 0px;
+    margin-top: 5.1%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    z-index: 999;
+    margin-left: 5.1%;
+    transform: translateY(-5vw) rotate(-45deg);
+    height: 5px;
+    width: 2.14vw;
+    margin-bottom: 0px;
+}
+figure{
+    margin: 0 0 0 0;
+}
+#logo{
+    margin-top: 10vw;
+    width: 7.03vw;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+h1{
+    display: none;
+}
+h2{
+display: none;
+}
+#branco{
+    display: block;
+    margin: -10vw auto 0 auto;
+    width: 21.875vw;
+    height: 24.47vw;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.349019607843137);
+}
+#email{
+    font-size: 1vw;
+    font-family: "FontAwesome", Open Sans, Arial;
+    border-radius: 5px;
+    border-color: #000;
+    width: 15.416vw;
+    height: 2.5vw;
+    display: block;
+    margin: 4vw auto 0 auto;
+    padding-left: 1vw;
+}
+#senha{ 
+    font-size: 1vw;
+    font-family: "FontAwesome", Open Sans, Arial;
+    border-radius: 5px;
+    border-color: #000;
+    width: 15.416vw;
+    height: 2.5vw;
+    display: block;
+    margin: -1vw auto 0 auto;
+    padding-left: 1vw; 
+}
+h3{
+    color: red;
+    font-size: 0.7vw;
+    margin-left: 2.8vw;
+}
+h4{
+    color: rgba(24, 117, 239, 1);
+    font-size: 0.7vw;
+    margin-left: 2.8vw;
+    margin-top: 1vw;
+}
+#botao{
+    background-color: rgba(24, 117, 239, 1);
+    border-radius: 5px;
+    width: 16.416vw;
+    height: 2.5vw;
+    border-style: none;
+    color: #fff;
+    font-size: 1vw;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+#linha{
+    display: none;
+}
+#ou{
+    display: none;
+}
+#cadastrar{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 16.416vw;
+    height: 2.5vw;
+    border-style: none;
+    color: rgba(24, 117, 239, 1);
+    font-size: 1vw;
+    display: block;
+    margin: 1vw auto 0 auto;
+}
+#branco-fundo{
+    background-color: #fbfbf9;
+    width: 100.9vw;
+    height: 67.7vh;
+    margin: -13vw 0 auto -39.1vw;
+    position: relative;
+    z-index: -999;
+}
+@media screen and (max-width:479px){
+body{
+    background-color: rgba(24, 117, 239, 1);
+    width: 100%;
+    height: 180vw;
+}
+#amarelo{
+    display: none;
+}
+a > div:nth-child(1) {
+    padding: 0px;
+    margin-top: 5%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    z-index: 999;
+    transform: translateY(4vw) rotate(45deg);
+    height: 5px;
+    width: 30px;
+    margin-left: 85vw;
+}
+a > div:nth-child(2) {
+    padding: 0px;
+    margin-top: 5%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    z-index: 999;
+    margin-left: 85vw;
+    transform: translateY(-2vw) rotate(-45deg);
+    height: 5px;
+    width: 30px;
+    margin-bottom: 0px;
+}
+figure{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+#logo{
+    margin-top: 10vw;
+    width: 45vw;
+    margin-left: -5vw;
+}
+h1{
+    color: #fff;
+    font-size: 6vw;
+    text-align: left;
+    margin-left: 5vw;
+}
+h2{
+    color: #fff;
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 5vw;
+}
+#branco{
+    width: 100%;
+    height: 180vw;
+    background-color: #fff;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 12vw;
+}
+#email{
+    font-size: 5vw;
+    font-family: "FontAwesome", Open Sans, Arial;
+    border-radius: 5px;
+    border-color: #000;
+    width: 85vw;
+    height: 15vw;
+    display: block;
+    margin: 5vw auto 0 auto;
+    padding-left: 5vw;
+}
+#senha{ 
+    font-size: 5vw;
+    font-family: "FontAwesome", Open Sans, Arial;
+    border-radius: 5px;
+    border-color: #000;
+    width: 85vw;
+    height: 15vw;
+    display: block;
+    margin: auto;
+    padding-left: 5vw; 
+}
+h3{
+    color: red;
+    font-size: 4vw;
+    margin-left: 6vw;
+}
+h4{
+    color: rgba(24, 117, 239, 1);
+    font-size: 4vw;
+    margin-left: 6vw;
+    margin-top: 15vw;
+}
+#botao{
+    background-color: rgba(24, 117, 239, 1);
+    border-radius: 5px;
+    width: 90vw;
+    height: 15vw;
+    border-style: none;
+    color: #fff;
+    font-size: 5vw;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+#linha{
+    width: 85vw;
+    height: 1vw;
+    background-color: #000;
+    border-radius: 10px;
+    margin: 10vw auto 0 auto;
+    display: block;
+    position: relative;
+}
+#ou{
+    color: #000;
+    font-size: 5vw;
+    background-color: #ffffff;
+    width: 15vw;
+    height: 5vw;
+    display: block;
+    margin: 0 auto 0 auto;
+    position: absolute;
+    top: -2vw;
+    right: 34vw;
+    text-align: center;
+}
+#cadastrar{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90vw;
+    height: 15vw;
+    border-color: rgba(24, 117, 239, 1);
+    color: rgba(24, 117, 239, 1);
+    font-size: 5vw;
+    display: block;
+    margin: 20vw auto 0 auto;
+}
+}

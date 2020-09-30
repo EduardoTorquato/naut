@@ -1,47 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
-        <title>Login Naut</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/default.css">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <meta name="application-name" content=StackOverflow>
-
-        <!--favicon, arquivo de imagem podendo ser 8x8 - 16x16 - 32x32px com extensão .ico-->
-        <link rel="shortcut icon" href="" type="image;x-icon">
-
-        
-        <!-- Telas Responsivas-->
-        <link rel=stylesheet media="screen and (max-width:480px)" href="css/style480.css">
-        <link rel=stylesheet media="screen and (min-width:481px) and (max-width:768px)" href="css/style768.css"> 
-        <link rel=stylesheet media="screen and (min-width:769px) and (max-width:1024px)" href="css/style1024.css">
-        <link rel=stylesheet media="screen and (min-width:1025px)" href="css/style1025.css">
-
-        <!-- Fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+        <meta charset=UTF-8>
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <meta name=author content=Uranus>
+        <script src="https://kit.fontawesome.com/7f5b8568ba.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="imagens_login/logo_naut_boia.svg">
+        <link rel=stylesheet href=css_login/default_login.css>
+        <link rel=stylesheet href="css_login/css_login.css">
+        <title>Login</title>
     </head>
-    <body>
-        <div id="container">
-            <header>
-                <a href="index.html"><img src="imagens/icones/seta_voltar.svg"></a>
-            </header>
-            <main>
-                <h1>Login</h1>
-                <form action=""  method="POST">
-                    <input type="email" name="email" id="email" placeholder="Email"><br>
-                    <input type="password" name="senha" id="senha" placeholder="Senha"><br>
-                    <input type="submit" value="Conecte-se">
-                </form>
-                <a href="">Esqueceu a senha?</a>
-                <a href="cadastro.html">Cadastrar</a>
-            </main>
-            <footer>
-                <button onclick="window.location.href='login_instituicao.html'" >Instituição</button>
-            </footer>
+<body>
+    <div id=container>
+        <div id=amarelo></div>
+        <a href="index.html"><div></div><div></div></a>
+        <figure>
+            <img id=logo src='imagens_login/logo-nome-naut-circulo.gif' alt='Logo Naut'>
+        </figure>
+        <h1>Bem vindo de volta !</h1>
+        <h2>Insira seu dados para entrar.</h2> 
+        <div id=branco>
+            <form action="#" method="POST">
+                <div id=email>
+                    <label for="email"></label>
+                </div>
+                <input type="email" id=email placeholder="&#xf0e0; Email" id="caixa1">
+                
+                <div id=senha>
+                    <label for="senha"></label>
+                </div>
+                <input type="password" id=senha placeholder="&#xf023; Senha">
+                <h3>Email ou senha incorretos!</h3>
+                <h4>Esqueceu a senha?</h3>
+                <button id=botao>Entrar</button>
+            </form>
+            <div id=linha> <h4 id=ou> Ou </h4></div>
+            <button id=cadastrar>Cadastrar</button>
+            
         </div>
-    </body>
+    </div>
+</body>
 </html>
