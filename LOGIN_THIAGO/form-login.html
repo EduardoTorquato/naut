@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Login Naut</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/default_login.css">
+        <script src="https://kit.fontawesome.com/7f5b8568ba.js" crossorigin="anonymous"></script>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="application-name" content=StackOverflow>
+
+        <!--favicon, arquivo de imagem podendo ser 8x8 - 16x16 - 32x32px com extensão .ico-->
+        <link rel="images/logo_naut_boia.svg" href="" type="image;x-icon">
+
+        
+        <!-- Telas Responsivas-->
+        <link rel=stylesheet media="screen and (max-width:480px)" href="css/form-login-style480.css">
+        <link rel=stylesheet media="screen and (min-width:481px)" href="css/form-login-style768.css"> 
+
+        <!-- Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <script>
+        </script>
+        <script src="js/inputmask.js"></script>
+        
+    </head>
+    <body>
+        <div id=container>
+            <form action="authentication/logon" onsubmit='logon()' method="POST">
+                <div class='etapa1'>
+                    <div class='topo'>
+                        <a class='cross-box' href="<?= url();?>"><div></div><div></div></a>
+                        
+                        <figure>
+                            <img id=logo src='images/logo-nome-naut-circulo.gif' alt='Logo Naut'>
+                        </figure>
+                        <h1>Bem-vindo de volta!</h1>
+                        <h2>Insira seu dados para entrar.</h2> 
+                    </div>
+                    <div id=branco>
+                            <hr class='puxador'>
+                            <div class='input'>
+                                <img class='icone icone-email' src='images/email.gif'><input type="email" required="required" name="email"  maxlength="100" class=email placeholder="Email"> 
+                            </div> 
+                            <div class='input'>
+                                <img class='icone icone-nome' src='images/locked.gif'><input id='nome' type="password" required="required"  maxlength="40" name="senha" class=nome placeholder="Senha">
+                            </div>
+                            <h3></h3>
+                            <h4 class='logar'><a href="/login">Esqueceu a senha?</a></h4>
+                            <button type='submit' id=botao >Entrar</button>
+                            <div class='ou'>
+                                <hr>
+                                <p> Ou </p>
+                                <hr>
+                            </div>
+                            <div class='btnCadastrar'> 
+                                <button type='button' onclick='window.location.href = login/cadastre-se' id=cadastrar >Cadastrar</button>
+                            </div>
+                    </div>
+                </div>
+                
+                </div>
+            </form>
+            </div>
+        </div>
+        <script>
+            var form = document.querySelector('form');
+            var msg = document.querySelector('h3');
+            var inputEmail = document.querySelectorAll('input')[0];
+            var inputSenha = document.querySelectorAll('input')[1];
+            var topo = document.querySelector('.topo');
+            form.onsubmit = function logon() {
+                var request = new XMLHttpRequest();
+                var data = new FormData(form);
+                url = '<?= url("authentication/logon");?>';
+                request.open('POST', url);
+                request.send(data);
+
+                request.onload = function () {
+                    
+                    if (request.responseText == 'Incorreto'){
+                        msg.innerHTML = 'Email e/ou senha incorretos!';
+                        inputEmail.style.borderColor = '#ff0000';
+                        inputSenha.style.borderColor = '#ff0000';
+                    } else if (request.responseText == 'Inativo') {
+                        msg.innerHTML = 'Usuário inativo, contate o administrador!';
+                        inputSenha.style.borderColor = 'rgb(117, 115, 115)';
+                        inputEmail.style.borderColor = 'rgb(117, 115, 115)';
+                    } else {
+                        if ('serviceWorker' in navigator) {
+           
+                                navigator.serviceWorker.register('sw.js')
+                                .then(reg => console.info('registered sw', reg))
+                                .catch(err => console.error('error registering sw', err));
+                        
+                        }
+                        window.location.href = request.responseText;
+                    }
+                    
+
+                }
+                return false;
+            }
+
+            window.onscroll = function () {
+                    var blur = 1 - document.querySelector('html').scrollTop / 300;
+                    topo.style.filter = 'brightness('+blur+')';
+                }
+            
+        </script>
+    </body>
+</html>
