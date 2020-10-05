@@ -1,0 +1,245 @@
+html {
+    scroll-behavior: smooth;
+    height: fit-content;
+    overflow-anchor: auto;
+    overflow-x: hidden;
+}
+#container {
+    overflow-anchor: auto;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgba(24, 117, 239, 1);
+    width: 100%;
+    overflow-anchor: auto;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(42, 122, 228);
+    font-weight: 100;
+    font-size: 4.375vw;
+}
+.cross-box > div:nth-child(1) {
+    padding: 0px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    z-index: 999;
+    transform: rotate(45deg);
+    height: 3px;
+    width: 10vw;
+    position: absolute;
+    right: 0;
+
+}
+
+.cross-box > div:nth-child(2) {
+    padding: 0px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    z-index: 999;
+    transform: translateX(-10vw) rotate(-45deg);
+    height: 3px;
+    width: 10vw;
+    position: absolute;
+}
+#logo{
+    margin-top: 27vw;
+    width: 45vw;
+    margin-left: -5vw;
+}
+h1{
+    color: #fff;
+    font-size: 6vw;
+    text-align: left;
+    margin: 1vw 8vw 1vw 8vw;
+}
+h2{
+    color: #fff;
+    font-size: 5vw;
+    text-align: left;
+    margin: 0 0 0 8vw;
+}
+#branco{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 12vw;
+    padding: 0 0 60px 0;
+    height: fit-content;
+    position: absolute;
+    top: 68vw;
+}
+.nome{ 
+    font-size: 3.75vw;
+    font-family: "FontAwesome", Open Sans, Arial;
+    border-radius: 5px;
+    border-color: #000;
+    width: 73vw;
+    height: 13.8vw;
+    display: block;
+    margin: 5vw auto 0 auto;
+    padding-left: 12vw;
+    position: relative;
+    left: -3vw;
+    font-weight: 700;
+}
+.email{
+    font-size: 3.75vw;
+    font-family: "FontAwesome", Open Sans, Arial;
+    border-radius: 5px;
+    border-color: rgb(117, 115, 115);
+    width: 73vw;
+    height: 13.8vw;
+    display: block;
+    margin: 20px auto 8px auto;
+    padding-left: 12vw;
+    position: relative;
+    left: -3vw;
+    font-weight: 700;
+}
+h3{
+    color: red;
+    font-size: 4vw;
+    margin: 6px auto 7vw 7vw ;
+    font-weight: 500;
+}
+.logar {
+    color: rgba(24, 117, 239, 1);
+    font-size: 4vw;
+    margin-left: 7vw;
+    margin: 10px auto 0 7vw;
+}
+#botao{
+    background-color: rgba(24, 117, 239, 1);
+    border-radius: 5px;
+    width: 85vw;
+    height: 15vw;
+    border-style: none;
+    font-size: 4.375vw;
+    display: block;
+    margin: 10px auto 0 auto;
+    color: white;
+    font-weight: 700;
+}
+
+#proximo{
+    color: #fff;
+    text-decoration: none;
+}
+
+#casa{
+    font-size: 13.8vw;
+    font-family: "FontAwesome", Open Sans, Arial;
+    border-radius: 5px;
+    border-color: rgb(117, 115, 115);
+    border-style: solid;
+    border-width: 2px;
+    width: 35vw;
+    height: 12vw;
+    display: block;
+    margin: 2vw 0 2vw 7vw;
+    padding-left: 10px;
+}
+
+p{
+    font-weight: 800;
+    color: rgb(117, 115, 115);
+    text-align: center;
+    font-size: 4vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+.etapa1{
+    height: fit-content;
+    overflow-anchor: auto;
+}
+
+.input {
+    display:flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.icone{
+    position: relative;
+    left: 32px;
+    width: 20px;
+    height: 20px;
+}
+
+.icone-email, .icone-nome {
+    position: relative;
+    left: 6vw;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    top: 2vw;
+}
+
+.topo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(24, 117, 239, 1);
+}
+
+hr {
+    width: 30vw;
+    border: solid 1px #797979;
+    height: 0;
+    margin: 12px;
+}
+
+.ou {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cadastrar {
+    border-radius: 5px;
+    border-color: rgba(24, 117, 239, 1);
+    border-width: 4px;
+    border-style: solid;
+    background-color: #fff;
+    width: 85vw;
+    height: 15vw;
+    font-weight: bolder;
+    margin: auto;
+    font-weight: 700;
+    color: rgb(24, 117, 239);
+    font-size: 4.375vw;
+}
+
+.btnCadastrar {
+    text-align: center;
+}
+
+.puxador {
+    margin: 22px auto 6px auto;
+    width: 12vw;
+    border-radius: 10px;
+    border: solid;
+    color: rgba(210, 210, 210, 1);
+}
+
+input:focus {
+    outline-color: rgba(24, 117, 239, 1);
+}
+
+.cross-box {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    width: fit-content;
+    margin: 0 0 0 0;
+    right: 20px;
+}
